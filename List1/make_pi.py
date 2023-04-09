@@ -5,8 +5,10 @@
 # make_pi() → [3, 1, 4]
 
 def make_pi():
-  result = []
-  result.append(3)
-  result.append(1)
-  result.append(4)
-  return result
+  pi='3.14'
+  res = []
+  for i in range(len(pi)):
+    if pi[i] in ['0','1','2','3','4','5','6','7','8','9']:
+      res.append(int(pi[i]))
+  return res
+
