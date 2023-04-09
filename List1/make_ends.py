@@ -6,6 +6,8 @@
 # make_ends([1, 2, 3, 4]) → [1, 4]
 # make_ends([7, 4, 6, 2]) → [7, 2]
 
+
+#method1
 def make_ends(nums):
   result = []
   if(len(nums)>=1):
@@ -13,4 +15,10 @@ def make_ends(nums):
     result.append(nums[-1])
  
   return result
+
+#method2
+def make_ends(nums):
+  new_array = [nums[0],nums[-1]]
+  return new_array
+
   
