@@ -6,6 +6,7 @@
 # max_end3([11, 5, 9]) → [11, 11, 11]
 # max_end3([2, 11, 3]) → [3, 3, 3]
 
+#Method1
 def max_end3(nums):
   max_num = None
   num_list = []
@@ -16,3 +17,11 @@ def max_end3(nums):
   for i in range(len(nums)):
     num_list.append(max_num)
   return num_list
+  
+#Method2
+def max_end3(nums):
+  for i in range(len(nums)):
+    nums[i]= max(nums[0],nums[-1])
+  return nums
+
+
