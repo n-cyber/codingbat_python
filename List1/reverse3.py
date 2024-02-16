@@ -6,9 +6,12 @@
 # reverse3([5, 11, 9]) → [9, 11, 5]
 # reverse3([7, 0, 0]) → [0, 0, 7]
 
-
+#Method1
 def reverse3(nums):
   result = []
   for i in range(len(nums)):
     result.insert(0,nums[i])
   return result
+#Method2  
+def reverse3(nums):
+  return nums[::-1]
