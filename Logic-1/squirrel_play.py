@@ -12,3 +12,7 @@ def squirrel_play(temp, is_summer):
   elif not is_summer:
     return temp<=90 and temp>=60
   return False
+
+#Method2
+def squirrel_play(temp, is_summer):
+  return (is_summer and temp in range(60,101)) or (not is_summer and temp in range(60,91))
